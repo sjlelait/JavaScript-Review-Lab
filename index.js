@@ -59,4 +59,5 @@ function checkAnimal(animal) {
     };
   };
 checkAnimal();
-//If I was doing this in terminal, COMMIT!
+//COMMIT to JavaScript-Review-Lab gitHub
+
