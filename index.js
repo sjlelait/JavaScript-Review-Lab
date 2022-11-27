@@ -13,7 +13,7 @@ A. Q + A
 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
   I am not sure on the specific percentage, but I'm learning that it makes a lot more sense to have a more even split of time for both.
 */
-
+/*
 // B. Strings
 //1.
 
@@ -72,3 +72,19 @@ function checkAge(yourAge) {
   };
 };
 checkAge(36);
+
+// II. Loops
+// A. The Basics
+
+let i = 0;
+
+for(let i = 0; i <= 10; i++) {
+  console.log(i);
+};
+for(let i = 10; i <= 400; i++) {
+  console.log(i);
+};
+for(let i = 12; i <= 4000; i+=3) {
+  console.log(i);
+};
+*/
