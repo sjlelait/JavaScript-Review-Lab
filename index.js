@@ -152,7 +152,7 @@ const randomThings = [1, 10, "Hello", true]
 randomThings[0];
 // 2. & 3. 
 randomThings[2] = "World"
-console.log(randomThings[2])
+console.log(randomThings[2]);
 
 // D. Change Values
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
@@ -177,7 +177,7 @@ myArray.pop();
 // 5. 
 myArray.reverse();
 // this returned a reversed array. This does mutate the array, meaning it overwrites the original array, rather than making a copy of it. 
-*/
+
 //F. Biggie Smalls
 
 let age = 9
@@ -202,5 +202,57 @@ function monkeyAge() {
   };
 };
 monkeyAge();
+*/
+// H. What's in Your Closet?
 
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
 
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// 1. 
+console.log(`Kristyn is rocking that ${kristynsCloset[2]} today!`);
+//to me 3rd item means position 2. I hope she finds her other sock!
+// 2. 
+kristynsCloset.splice(6, 0, "raybans");
+// 3. 
+kristynsCloset[5] = "stained knit hat";
+console.log(kristynsCloset);
+// 4. 
+const shirt = thomsCloset[0].slice(0,1);
+// 5. 
+const pants = thomsCloset[1].slice(1,2);
+// 6.
+const accessory = thomsCloset[2].slice(1,2);
+// 7.
+console.log(`Thom is looking fierce in a ${shirt}, ${pants} and a ${accessory}!`);
+// 8. 
+thomsCloset[1][2] = "Footie Pajamas"
+
+console.log(thomsCloset);
