@@ -295,5 +295,19 @@ function isVowel(letter) {
     return false;
   };
 };
-console.log(isVowel("y"));
- 
+console.log(isVowel("E"));
+
+// E. getTwoLengths
+
+function getTwoLengths(str1, str2) {
+  console.log(str1.length, str2.length);
+};
+console.log(getTwoLengths("Jade", "Cactus"));
+
+// F. getMultipleLengths
+let arr = []
+function getMultipleLengths([]) {
+  for (let i = 0; i < arr.length; i++);
+  console.log(arr.length);
+}
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
