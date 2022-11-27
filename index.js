@@ -61,3 +61,14 @@ function checkAnimal(animal) {
 checkAnimal();
 //COMMIT to JavaScript-Review-Lab gitHub
 
+// E. Driver's Ed
+
+let yourAge = ""
+function checkAge(yourAge) {
+  if (yourAge >= 16) {
+    console.log("Here are the keys!");
+  }else {
+    console.log("Sorry, you're too young.");
+  };
+};
+checkAge(36);
