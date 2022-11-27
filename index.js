@@ -75,18 +75,21 @@ checkAge(36);
 
 // II. Loops
 // A. The Basics
-
-let i = 0;
 /*
+let i = 0;
+
 for(let i = 0; i <= 10; i++) {
   console.log(i);
 };
+
 for(let i = 10; i <= 400; i++) {
   console.log(i);
 };
+
 for(let i = 12; i <= 4000; i+=3) {
   console.log(i);
 };
+
 for(let i = 1; i <=100; i++) {
   if(i % 2 == 0) {
     console.log(`${i} <--is an even number`);
@@ -94,13 +97,36 @@ for(let i = 1; i <=100; i++) {
     console.log(i);
   };
 };
-*/
+
 for(let i = 1; i <= 100; i++) {
   if(i % 5 == 0 && i % 3 == 0) {
     console.log(`I found a ${i}. High five, three's a crowd!`);
   } else if(i % 5 == 0) {
     console.log(`I found a ${i}. High five!`);
   } else if(i % 3 == 0) {
-    console.log(`I found a ${i}. Three's a crowd`);
+    console.log(`I found a ${i}. Three's a crowd.`);
   };
 };
+*/
+// D. Savings account
+// 1. 
+
+function sum(number) {
+  let bank_account = 0;
+    for(let i = 1; i <= 10 ; i++) {
+      bank_account += i;
+    };
+  console.log(`${bank_account}`);
+};
+sum();
+
+// 2. 
+
+function sumRaise(number) {
+  let bank_account = 0;
+    for(let i = 1; i <= 100; i++) {
+      bank_account += (i * 2);
+    };
+  console.log(`${bank_account}`);
+}
+sumRaise();
