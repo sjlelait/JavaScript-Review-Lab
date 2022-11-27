@@ -14,7 +14,7 @@ A. Q + A
   I am not sure on the specific percentage, but I'm learning that it makes a lot more sense to have a more even split of time for both.
 */
 
-// B. Strings
+/* B. Strings
 //1.
 
 let firstVariable = "Hello World"
@@ -75,7 +75,7 @@ checkAge(36);
 
 // II. Loops
 // A. The Basics
-/*
+
 let i = 0;
 
 for(let i = 0; i <= 10; i++) {
@@ -107,7 +107,7 @@ for(let i = 1; i <= 100; i++) {
     console.log(`I found a ${i}. Three's a crowd.`);
   };
 };
-*/
+
 // D. Savings account
 // 1. 
 
@@ -130,3 +130,53 @@ function sumRaise(number) {
   console.log(`${bank_account}`);
 }
 sumRaise();
+*/
+// III. Arrays & Control Flow
+/*
+// A. 
+1. What are the things in an array called?
+  Elements are inside of arrays (they're ordered collections of data).
+2. Do Arrays guarantee those things will be in order?
+  As just stated, yes, they are ordered by position, begining at 0.
+3. What real-life thing could you model with an array?
+  Tons of stuff! Info about a person, prices of things, types of cool plants, ammount of times one laughed at each joke at a comedy show, etc.
+
+// B. Easy Does It
+
+const quotes = ["Not my chair, not my problem", "See that sky today? Talk about blue.", "I don't distinguish between being laughed with, or laughed at. I'll take either."]
+
+// C. Accessing elements
+
+const randomThings = [1, 10, "Hello", true]
+// 1. 
+randomThings[0];
+// 2. & 3. 
+randomThings[2] = "World"
+console.log(randomThings[2])
+
+// D. Change Values
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+// 1. 
+ourClass[2];
+// 2. 
+ourClass[4] = "Octocat";
+// 3.
+ourClass.push("Cloud City");
+
+// E. Mix It Up
+*/
+const myArray = [5, 10, 500, 20]
+// 1. 
+myArray.push("Egon", "Strudel");
+// 2. 
+myArray.shift(5);
+// 3. 
+myArray.unshift("Bob Marley");
+// 4. 
+myArray.pop();
+// 5. 
+myArray.reverse();
+/* this returned a reversed array. This does mutate the array, meaning it overwrites the original array, rather than making a copy of it. 
+*/
+
+
