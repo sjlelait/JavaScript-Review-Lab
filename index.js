@@ -164,7 +164,7 @@ ourClass[4] = "Octocat";
 ourClass.push("Cloud City");
 
 // E. Mix It Up
-*/
+
 const myArray = [5, 10, 500, 20]
 // 1. 
 myArray.push("Egon", "Strudel");
@@ -176,7 +176,31 @@ myArray.unshift("Bob Marley");
 myArray.pop();
 // 5. 
 myArray.reverse();
-/* this returned a reversed array. This does mutate the array, meaning it overwrites the original array, rather than making a copy of it. 
+// this returned a reversed array. This does mutate the array, meaning it overwrites the original array, rather than making a copy of it. 
 */
+//F. Biggie Smalls
+
+let age = 9
+function checkAge() {
+  if (age < 100) {
+  console.log("little number")
+  } else {
+  console.log("big number")
+  };
+};
+checkAge();
+
+// G. Monkey in the Middle
+
+function monkeyAge() {
+  if (age < 5) {
+    consloe.log("little number")
+  } else if (age > 10) {
+    console.log("big number")
+  } else {
+    console.log("monkey")
+  };
+};
+monkeyAge();
 
 
