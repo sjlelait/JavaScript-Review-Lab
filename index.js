@@ -14,9 +14,9 @@ A. Q + A
   I am not sure on the specific percentage, but I'm learning that it makes a lot more sense to have a more even split of time for both.
 */
 
-/* B. Strings
+//B. Strings
 //1.
-
+/*
 let firstVariable = "Hello World"
 firstVariable = 36
 secondVariable = (firstVariable)
@@ -72,10 +72,10 @@ function checkAge(yourAge) {
   };
 };
 checkAge(36);
-
+*/
 // II. Loops
 // A. The Basics
-
+/*
 let i = 0;
 
 for(let i = 0; i <= 10; i++) {
@@ -90,6 +90,8 @@ for(let i = 12; i <= 4000; i+=3) {
   console.log(i);
 };
 
+// B. Get Even
+
 for(let i = 1; i <=100; i++) {
   if(i % 2 == 0) {
     console.log(`${i} <--is an even number`);
@@ -97,6 +99,8 @@ for(let i = 1; i <=100; i++) {
     console.log(i);
   };
 };
+
+// C. Give Me Five
 
 for(let i = 1; i <= 100; i++) {
   if(i % 5 == 0 && i % 3 == 0) {
@@ -155,6 +159,7 @@ randomThings[2] = "World"
 console.log(randomThings[2]);
 
 // D. Change Values
+
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 // 1. 
 ourClass[2];
@@ -202,7 +207,7 @@ function monkeyAge() {
   };
 };
 monkeyAge();
-*/
+
 // H. What's in Your Closet?
 
 const kristynsCloset = [
@@ -256,3 +261,25 @@ console.log(`Thom is looking fierce in a ${shirt}, ${pants} and a ${accessory}!`
 thomsCloset[1][2] = "Footie Pajamas"
 
 console.log(thomsCloset);
+*/
+// IV. Functions
+// A. printGreeting
+
+function printGreeting(name) {
+  console.log(`Hey there ${name}!`)
+};
+ printGreeting("Slimer");
+
+// B. printCool
+
+function printCool(name) {
+  console.log(`${name} is cool`)
+};
+printCool("Kronk");
+
+// C. calculateCube
+
+function calculateCube(num) {
+  console.log(num ** 3)
+};
+calculateCube(5);
