@@ -268,18 +268,32 @@ console.log(thomsCloset);
 function printGreeting(name) {
   console.log(`Hey there ${name}!`)
 };
- printGreeting("Slimer");
+console.log(printGreeting("Slimer"));
 
 // B. printCool
 
 function printCool(name) {
   console.log(`${name} is cool`)
 };
-printCool("Kronk");
+console.log(printCool("Kronk"));
 
 // C. calculateCube
 
 function calculateCube(num) {
   console.log(num ** 3)
 };
-calculateCube(5);
+console.log(calculateCube(5));
+
+// D. isVowel
+
+function isVowel(letter) {
+  if (letter.toLowerCase() === "a" || letter.toLowerCase() === "e" || letter.toLowerCase() === "i" || letter.toLowerCase() === "o" || letter.toLowerCase() === "u") {
+    return true;
+  } else if (letter.toLowerCase() === "y") {
+    console.log("Sometimes");
+  } else {
+    return false;
+  };
+};
+console.log(isVowel("y"));
+ 
