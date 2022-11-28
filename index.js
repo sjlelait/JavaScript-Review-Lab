@@ -303,7 +303,7 @@ function getTwoLengths(str1, str2) {
   console.log(str1.length, str2.length);
 };
 console.log(getTwoLengths("Jade", "Cactus"));
-*/
+
 // F. getMultipleLengths
 
 function getMultipleLengths(arr) {
@@ -341,4 +341,58 @@ function printLongestWord(str) {
 };
 
 console.log(printLongestWord(["Bob", "Linda", "Hamburger", "Louise", "Tina", "Butts", "Jericho"]));
+*/
+// Objects
+
+// A. Make a user object
+const user = {
+  name: "Sara",
+  email: "sjlelait@gmail.com",
+  age: 36,
+  purchased: [],
+};
+
+// B. Update the user
+user.email = "imfeelingchange@gmail.com";
+user.age++;
+
+// C. Adding keys and values
+user.location = "Fort Collins";
+
+// D. Shopaholic!
+// 1.
+user.purchased.push("carbohydrates");
+// 2.
+user.purchased.push("peace of mind");
+// 3.
+user.purchased.push("Merino jodhpurs");
+// 4. 
+console.log(user.purchased[2]);
+
+// E. Object-within-object
+// 1. 
+user.friend = {
+  name: "Jon",
+  age: 38,
+  location: "Georgia",
+  purchased: [],
+};
+// 2. 
+console.log(user.friend.name);
+// 3.
+console.log(user.friend.location);
+// 4. 
+user.friend.age = 55;
+// 5.
+user.friend.purchased.push("The One Ring");
+// 6. 
+user.friend.purchased.push("A Latte");
+// 7.
+console.log(user.friend.purchased[1]);
+
+// F. Loops
+// 1.
+for () {
+  
+}
 
