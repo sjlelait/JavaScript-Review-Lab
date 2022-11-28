@@ -305,9 +305,27 @@ function getTwoLengths(str1, str2) {
 console.log(getTwoLengths("Jade", "Cactus"));
 
 // F. getMultipleLengths
-let arr = []
+
 function getMultipleLengths([]) {
-  for (let i = 0; i < arr.length; i++);
-  console.log(arr.length);
-}
+  let arr = []
+  arr.forEach(function(size) {
+    arr.push(getMultipleLengths)
+    console.log(arr.length)
+  });
+};
+
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+//COME BACK!!!!!!!
+
+// G. maxOfThree
+let arr = [];
+let largest = 0;
+function maxOfThree() {
+for (i = 0; i < arr.length; i++) {
+  if (arr[i] > largest) {
+    largest = arr[i];
+  }
+}
+}
+console.log(maxOfThree(6, 9, 1))
