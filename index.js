@@ -306,6 +306,9 @@ console.log(getTwoLengths("Jade", "Cactus"));
 
 // F. getMultipleLengths
 
+/*
+//COME BACK!!!!!!!
+
 function getMultipleLengths([]) {
   let arr = []
   arr.forEach(function(size) {
@@ -316,7 +319,7 @@ function getMultipleLengths([]) {
 
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
-//COME BACK!!!!!!!
+
 
 // G. maxOfThree
 let arr = [];
@@ -329,3 +332,8 @@ for (i = 0; i < arr.length; i++) {
 }
 }
 console.log(maxOfThree(6, 9, 1))
+
+// H. printLongestWord
+
+*/
+
