@@ -264,7 +264,7 @@ console.log(thomsCloset);
 */
 // IV. Functions
 // A. printGreeting
-
+/*
 function printGreeting(name) {
   console.log(`Hey there ${name}!`)
 };
@@ -303,37 +303,32 @@ function getTwoLengths(str1, str2) {
   console.log(str1.length, str2.length);
 };
 console.log(getTwoLengths("Jade", "Cactus"));
-
+*/
 // F. getMultipleLengths
 
-/*
-//COME BACK!!!!!!!
-
-function getMultipleLengths([]) {
-  let arr = []
-  arr.forEach(function(size) {
-    arr.push(getMultipleLengths)
-    console.log(arr.length)
-  });
-};
-
+function getMultipleLengths(arr) {
+  const yourArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    yourArray.push(arr[i].length);
+  }
+  console.log(yourArray);
+}
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
-
-
 // G. maxOfThree
-let arr = [];
-let largest = 0;
-function maxOfThree() {
-for (i = 0; i < arr.length; i++) {
-  if (arr[i] > largest) {
-    largest = arr[i];
-  }
-}
-}
-console.log(maxOfThree(6, 9, 1))
+
+function maxOfThree(arr) { 
+  let max = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if(max < arr[i]) {
+  max = arr[i];
+    };
+  };
+  console.log(max);
+};
+console.log(maxOfThree([7, 7, 2]));
 
 // H. printLongestWord
 
-*/
+
 
