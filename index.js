@@ -307,13 +307,13 @@ console.log(getTwoLengths("Jade", "Cactus"));
 // F. getMultipleLengths
 
 function getMultipleLengths(arr) {
-  const yourArray = [];
+  let yourArray = [];
   for (let i = 0; i < arr.length; i++) {
     yourArray.push(arr[i].length);
   }
   console.log(yourArray);
 }
-console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+console.log(getMultipleLengths(["yo", "what", "is", "up", "dude"]));
 
 // G. maxOfThree
 
@@ -330,5 +330,15 @@ console.log(maxOfThree([7, 7, 2]));
 
 // H. printLongestWord
 
+function printLongestWord(str) {
+  let longest = "";
+  for (let i = 0; i < str.length; i++) {
+    if(str[i].length > longest.length) {
+      longest = str[i];
+    }
+  };
+  console.log(longest);
+};
 
+console.log(printLongestWord(["Bob", "Linda", "Hamburger", "Louise", "Tina", "Butts", "Jericho"]));
 
