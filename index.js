@@ -13,10 +13,10 @@ A. Q + A
 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
   I am not sure on the specific percentage, but I'm learning that it makes a lot more sense to have a more even split of time for both.
 */
-
+/*
 //B. Strings
 //1.
-/*
+
 let firstVariable = "Hello World"
 firstVariable = 36
 secondVariable = (firstVariable)
@@ -73,9 +73,10 @@ function checkAge(yourAge) {
 };
 checkAge(36);
 */
+/*
 // II. Loops
 // A. The Basics
-/*
+
 let i = 0;
 
 for(let i = 0; i <= 10; i++) {
@@ -135,16 +136,18 @@ function sumRaise(number) {
 }
 sumRaise();
 */
+
 // III. Arrays & Control Flow
-/*
 // A. 
+/*
 1. What are the things in an array called?
   Elements are inside of arrays (they're ordered collections of data).
 2. Do Arrays guarantee those things will be in order?
   As just stated, yes, they are ordered by position, begining at 0.
 3. What real-life thing could you model with an array?
   Tons of stuff! Info about a person, prices of things, types of cool plants, ammount of times one laughed at each joke at a comedy show, etc.
-
+*/
+/*
 // B. Easy Does It
 
 const quotes = ["Not my chair, not my problem", "See that sky today? Talk about blue.", "I don't distinguish between being laughed with, or laughed at. I'll take either."]
@@ -206,7 +209,7 @@ function monkeyAge() {
     console.log("monkey")
   };
 };
-monkeyAge();
+monkeyAge(9);
 
 // H. What's in Your Closet?
 
@@ -259,33 +262,29 @@ const accessory = thomsCloset[2].slice(1,2);
 console.log(`Thom is looking fierce in a ${shirt}, ${pants} and a ${accessory}!`);
 // 8. 
 thomsCloset[1][2] = "Footie Pajamas"
-
 console.log(thomsCloset);
 */
+/*
 // IV. Functions
 // A. printGreeting
-/*
 function printGreeting(name) {
   console.log(`Hey there ${name}!`)
 };
 console.log(printGreeting("Slimer"));
 
 // B. printCool
-
 function printCool(name) {
   console.log(`${name} is cool`)
 };
 console.log(printCool("Kronk"));
 
 // C. calculateCube
-
 function calculateCube(num) {
   console.log(num ** 3)
 };
 console.log(calculateCube(5));
 
 // D. isVowel
-
 function isVowel(letter) {
   if (letter.toLowerCase() === "a" || letter.toLowerCase() === "e" || letter.toLowerCase() === "i" || letter.toLowerCase() === "o" || letter.toLowerCase() === "u") {
     return true;
@@ -298,14 +297,12 @@ function isVowel(letter) {
 console.log(isVowel("E"));
 
 // E. getTwoLengths
-
 function getTwoLengths(str1, str2) {
   console.log(str1.length, str2.length);
 };
 console.log(getTwoLengths("Jade", "Cactus"));
 
 // F. getMultipleLengths
-
 function getMultipleLengths(arr) {
   let yourArray = [];
   for (let i = 0; i < arr.length; i++) {
@@ -316,7 +313,6 @@ function getMultipleLengths(arr) {
 console.log(getMultipleLengths(["yo", "what", "is", "up", "dude"]));
 
 // G. maxOfThree
-
 function maxOfThree(arr) { 
   let max = arr[0];
   for (let i = 0; i < arr.length; i++) {
@@ -329,7 +325,6 @@ function maxOfThree(arr) {
 console.log(maxOfThree([7, 7, 2]));
 
 // H. printLongestWord
-
 function printLongestWord(str) {
   let longest = "";
   for (let i = 0; i < str.length; i++) {
@@ -339,11 +334,10 @@ function printLongestWord(str) {
   };
   console.log(longest);
 };
-
 console.log(printLongestWord(["Bob", "Linda", "Hamburger", "Louise", "Tina", "Butts", "Jericho"]));
 */
+/*
 // Objects
-
 // A. Make a user object
 const user = {
   name: "Sara",
@@ -413,3 +407,5 @@ function oldAndLoud(person) {
 };
 oldAndLoud(user);
 console.log(user);
+*/
+
