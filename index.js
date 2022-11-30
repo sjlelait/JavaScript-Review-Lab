@@ -13,10 +13,10 @@ A. Q + A
 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
   I am not sure on the specific percentage, but I'm learning that it makes a lot more sense to have a more even split of time for both.
 */
-/*
-//B. Strings
-//1.
 
+//B. Strings
+
+//1.
 let firstVariable = "Hello World"
 firstVariable = 36
 secondVariable = (firstVariable)
@@ -24,7 +24,6 @@ secondVariable = "Happy Birthday to Me!"
 console.log(firstVariable);
 
 // 2.
-
 const yourName = "Sara"
 console.log(`Hello, my name is ${yourName}`);
 
@@ -63,17 +62,17 @@ checkAnimal();
 
 // E. Driver's Ed
 
-let yourAge = ""
-function checkAge(yourAge) {
-  if (yourAge >= 16) {
+
+function checkAge(age) {
+  if (age >= 16) {
     console.log("Here are the keys!");
   }else {
     console.log("Sorry, you're too young.");
   };
 };
 checkAge(36);
-*/
-/*
+
+
 // II. Loops
 // A. The Basics
 
@@ -135,7 +134,7 @@ function sumRaise(number) {
   console.log(`${bank_account}`);
 }
 sumRaise();
-*/
+
 
 // III. Arrays & Control Flow
 // A. 
@@ -147,14 +146,14 @@ sumRaise();
 3. What real-life thing could you model with an array?
   Tons of stuff! Info about a person, prices of things, types of cool plants, ammount of times one laughed at each joke at a comedy show, etc.
 */
-/*
+
 // B. Easy Does It
 
-const quotes = ["Not my chair, not my problem", "See that sky today? Talk about blue.", "I don't distinguish between being laughed with, or laughed at. I'll take either."]
+const quotes = ["Not my chair, not my problem", "See that sky today? Talk about blue.", "I don't distinguish between being laughed with, or laughed at. I'll take either."];
 
 // C. Accessing elements
 
-const randomThings = [1, 10, "Hello", true]
+const randomThings = [1, 10, "Hello", true];
 // 1. 
 randomThings[0];
 // 2. & 3. 
@@ -163,7 +162,7 @@ console.log(randomThings[2]);
 
 // D. Change Values
 
-const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
 // 1. 
 ourClass[2];
 // 2. 
@@ -188,19 +187,18 @@ myArray.reverse();
 
 //F. Biggie Smalls
 
-let age = 9
-function checkAge() {
+function checkAge(age) {
   if (age < 100) {
   console.log("little number")
   } else {
   console.log("big number")
   };
 };
-checkAge();
+checkAge(200);
 
 // G. Monkey in the Middle
 
-function monkeyAge() {
+function monkeyAge(age) {
   if (age < 5) {
     consloe.log("little number")
   } else if (age > 10) {
@@ -263,9 +261,10 @@ console.log(`Thom is looking fierce in a ${shirt}, ${pants} and a ${accessory}!`
 // 8. 
 thomsCloset[1][2] = "Footie Pajamas"
 console.log(thomsCloset);
-*/
-/*
+
+
 // IV. Functions
+
 // A. printGreeting
 function printGreeting(name) {
   console.log(`Hey there ${name}!`)
@@ -294,7 +293,7 @@ function isVowel(letter) {
     return false;
   };
 };
-console.log(isVowel("E"));
+console.log(isVowel("Y"));
 
 // E. getTwoLengths
 function getTwoLengths(str1, str2) {
@@ -310,7 +309,7 @@ function getMultipleLengths(arr) {
   }
   console.log(yourArray);
 }
-console.log(getMultipleLengths(["yo", "what", "is", "up", "dude"]));
+console.log(getMultipleLengths(["yo", "kitty", "you're", "crazy", "but", "cute"]));
 
 // G. maxOfThree
 function maxOfThree(arr) { 
@@ -335,9 +334,10 @@ function printLongestWord(str) {
   console.log(longest);
 };
 console.log(printLongestWord(["Bob", "Linda", "Hamburger", "Louise", "Tina", "Butts", "Jericho"]));
-*/
-/*
+
+
 // Objects
+
 // A. Make a user object
 const user = {
   name: "Sara",
@@ -407,5 +407,38 @@ function oldAndLoud(person) {
 };
 oldAndLoud(user);
 console.log(user);
-*/
 
+
+
+/*
+// Cat Combinator *** not complete ***
+
+// 1. Mama Cat
+const cat1 = {
+  name: "Strudel",
+  breed: "Flame Point Siamese",
+  age: 6
+};
+//console.log(cat1.age);
+//console.log(cat1.breed);
+//2. Papa Cat
+const cat2 = {
+  name: "O.G.",
+  breed: "American Shorthair",
+  age: 16
+};
+// 3. Combine Cats!
+const combineCats = function(mama, papa) {
+  const kitten = {
+    name: (`${cat2.name} ${cat1.name}`),
+    breed: (`${cat1.breed}-${cat2.breed}`),
+    age: 1
+  }
+  console.log(kitten);
+};
+console.log(combineCats(cat1, cat2));
+// 4. Cat brain bender
+
+console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+
+*/
